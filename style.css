@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC:ital@0;1&family=Sacramento&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Alice", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display SC", serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Sacramento", cursive;
+}
+
+.shopTitle {
+  font-family: "Playfair Display SC", serif;
+  font-size: 12px;
+  letter-spacing: .5em;
+}
+
+::-moz-selection {
+  background-color: orangered;
+}
+
+::selection {
+  background-color: orangered;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.header__mobile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .75rem;
+  padding: 10px;
+}
+
+.header__mobile img {
+  width: 55px;
+}
+
+.header__desktop {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__desktop .navItems {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header__desktop .navItems p {
+  padding: .75rem 2rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  
+}
+
+.header__desktop .navItems:hover p {
+  color: #c7d93b;
+  cursor: pointer;
+}
+
+.header__desktop .navLogo {
+  padding: 1rem 2.5rem;
+}
+
+.header__desktop .navLogo img {
+  width: 100px;
+  margin-bottom: .5rem;
+}
+
+.header__desktop .navLogo .shopTitle {
+  font-size: 10px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__desktop .navLogo:hover .shopTitle {
+  color: #c7d93b;
+  cursor: pointer;
+}
+
+.header__hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_slider1.jpg?v=839847293968337857);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__hero .caption {
+  text-align: center;
+  color: #fff;
+}
+
+.header__hero .caption h1 {
+  font-size: 36px;
+  font-weight: normal;
+  font-style: italic;
+  padding: 21px 36px;
+  border-bottom: 1px solid #fff;
+}
+
+.header__hero .caption a {
+  font-size: 54px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.header__hero .caption a:hover {
+  color: #c7d93b;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .header__mobile {
+    display: none;
+  }
+  .header__hero {
+    background-position-y: top;
+  }
+}
+
+
+
+
+
+
+.menu{
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    border-bottom: #fff 1px solid;
+    align-items: center;
+    margin-left: 20%;
+    position: relative;
+}
+.collection{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.col{
+    color: #fff;
+    font-size: 100px;
+    border-bottom: #fff 1px solid;
+}
+.come{
+    font-family: 'Sacramento', cursive;
+    padding-top: 15px;
+    color: #fff;
+    font-size: 100px;
+}
+.shop{
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+.boy{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #1d1a19;
+    text-align: center;
+}
+.col1{
+    font-size: 100px;
+    border-bottom: #1d1a19 1px solid;
+}
+.come1{
+    font-size: 20px;
+    padding-top: 25px;
+}
+.bie{
+    padding-top: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+}
+.bie img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bie img:hover{
+    cursor: pointer;
+}
+.boy1{
+    width: 100%;
+    padding-top: 250px;
+}
+.boy2{
+    width: 100%;
+    padding-top: 200px;
+}
+.image{
+    background-image: url(https://cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_divider.jpg?v=10908527258020221636);
+    height: 600px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boy4{
+    width: 100%;
+    padding-top: 100px;
+    background: #f4efde;
+}
+.bie1{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-top: 20px;
+}
+.hol2{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.hol{
+    width: 30%;
+    color: #1d1a19;
+}
+.text-tol{
+    padding-top: 40px;
+    color: #1d1a19;
+    font-size: 40px;
+    border-bottom: #1d1a19 1px solid;
+}
+.text{
+    padding-top: 30px;
+
+}
+.image2{
+    background-image: url(https://cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_footer.jpg?v=5164167556579775996);
+    height: 600px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hol3{
+    width: 100%;
+    height: 340px;
+    background: #dba539;
+    color: #fff;
+}
+.links{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 200px;
+    margin-left: 35%;
+}
+.text2{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.text4{
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+.end{
+    padding-top: 10px;
+    background: #805f1f;
+    width: 100%;
+    height: 40px;
+}
+.card{
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+.card-name{
+    width: 290px;
+    height: 290px;
+    margin-top: 50px;
+    margin-left: 25px;
+    color: #ffffff00;
+    padding-top: 80px;
+}
+.card .card-name{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card-name:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #00000080;
+}
+.card-name h2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #ffffff00;
+}
+.card-name p{
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: 'Sacramento', cursive;
+    font-style: normal;
+    font-weight: 400;
+}
+.card{
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+.card-name1{
+    width: 290px;
+    height: 290px;
+    margin-top: 50px;
+    margin-left: 60px;
+    color: #ffffff00;
+    padding-top: 80px;
+}
+.card .card-name1{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card-name1:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #00000080;
+}
+
+
+
+.bie:hover{
+  transition: 10s;
+}
+
+
+
+
+
+
+
+
+
+.card-name1 h2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #ffffff00;
+}
+.card-name1 p{
+    padding-top: 30px;
+    font-size: 20px;
+}
+.card-name p:hover{
+    color: #c7d93b;
+}
+.card-name1 p:hover{
+    color: #c7d93b;
+}
+.shop1:hover{
+    color: #c7d93b;
+    cursor: pointer;
+}
+.about:hover{
+    color: #c7d93b;
+    cursor: pointer;
+}
+.tough:hover{
+    color: #c7d93b;
+    cursor: pointer;
+}
+.contact:hover{
+    color: #c7d93b;
+    cursor: pointer;
+}
+.shop:hover{
+    color: #c7d93b;
+    cursor: pointer;
+}
+.come:hover{
+    color: #c7d93b;
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px){
+    nav{
+        display: none;
+    }
+    .boy{
+        display: none;
+    }
+    .boy1{
+        display: none;
+    }
+    .boy2{
+        display: none;
+    }
+    .boy3{
+        display: none;
+    }
+    .boy4{
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px){
+    .mobile-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mobile-image p{
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+    }
+    .mobile-image h2{
+        color: #fff;
+        text-align: center;
+        font-size: 55px;
+    }
+    .border{
+        width: 90%;
+        height: 1px;
+        background-color: #fff;
+        margin-left: 5%;
+    }
+    .border p{
+        font-family: 'Sacramento', cursive;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .mobile-text-top{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .mobile-text-top p{
+        font-size: 20px;
+    }
+    .mobile-text-top h2{
+        font-size: 50px;
+        padding-bottom: 15px;
+    }
+    .mobile-text-top b{
+        width: 80%;
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    .mobile-text-top1{
+        text-align: center;
+        padding-top: 150px;
+    }
+    .mobile-text-top1 p{
+        font-size: 20px;
+    }
+    .mobile-text-top1 h2{
+        font-size: 50px;
+        padding-bottom: 15px;
+    }
+    .mobile-text-top1 b{
+        width: 80%;
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    .border1{
+        width: 60%;
+        height: 1px;
+        background-color: #000;
+        margin-left: 20%;
+        margin-bottom: 20px;
+    }
+    .mobile-header{
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo{
+        width: 50%;
+    }
+    .mobile-shop{
+        width: 50%;
+    }
+    .mobile-shop i{
+        color: #000;
+        font-size: 25px;
+        display: flex;
+        justify-content: right;
+        margin-right: 30px;
+        margin-top: 8px;
+    }
+    .logo p{
+        color: #000;
+        font-size: 30px;
+        justify-content: left;
+    }
+    .mobile-image{
+        background-image: url("https://cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_slider1.jpg?v=839847293968337857");
+        height: 100vh;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mobile-card{
+        width: 100%;
+        height: 130%;
+    }
+    .card-image{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .card-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .mobile-card-name{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .mobile-card-name p{
+        font-size: 20px;
+    }
+    .mobile-card-name h2{
+        font-size: 40px;
+        padding-bottom: 25px;
+    }
+    .mobile-card-name b{
+        font-size: 20px;
+    }
+    .border2{
+        width: 90%;
+        height: 1px;
+        background-color: #e3e3e3;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+    .border2 p{
+        font-family: 'Sacramento', cursive;
+    }
+    .spacer{
+        width: 100%;
+        height: 10vh;
+    }
+    .mobile-img1{
+        background-image: url(https://cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_divider.jpg?v=10908527258020221636);
+        height: 80vh;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mobile-info{
+        width: 100%;
+        background: #f4efde;
+        text-align: center;
+        padding-bottom: 10vh;
+    }
+    .mobile-col1{
+        font-size: 50px;
+    }
+    .mobile-come1{
+        font-size: 20px;
+        padding-top: 25px;
+    }
+    .mobile-colors{
+        padding-top: 50px;
+    }
+    .mobile-info-1{
+        text-align: center;
+    }
+    .border4{
+        width: 50%;
+        height: 1px;
+        background-color: #1f1a19;
+        margin-left: 25%;
+    }
+    .border5{
+        width: 80%;
+        height: 1px;
+        background-color: #1f1a19;
+        margin-left: 10%;
+    }
+    .mobile-text-icon{
+        text-align: center;
+    }
+    .mobile-img2{
+        background-image: url(https://cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_footer.jpg?v=5164167556579775996);
+        height: 50vh;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mobile-btm{
+        width: 100%;
+
+        background: #dba539;
+    }
+    .mobile-links{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .mobile-links i{
+        padding-top: 100px;
+        color: #fff;
+        font-size: 30px;
+    }
+    .btm-text{
+        width: 70%;
+        padding-top: 50px;
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 15%;
+        padding-bottom: 3vh;
+    }
+}
+@media screen and (min-width: 1024px){
+    .mobile{
+        display: none;
+    }
+}
+@media screen and (min-width: 1025px){
+    
+}
+
+
+
+
+
+
+
+/*home-work mnfansabs, animation, iphone center, */
